@@ -8,21 +8,20 @@ function esPositivo(num) {
    // Si el número es negativo ---> "Es negativo".
    // Si el número es 0, devuelve false.
    // Tu código:
-   if (num > 0) {
-      return "Es positivo"
-   }
-   else if (num < 0) {
-      return "Es negativo"
-   }
-   else 
-      return false;
+  if (num > 0) {
+   return "Es positivo";
+  } else if (num < 0) {
+   return "Es negativo";
+  } else if (num === 0) {
+   return false;
+  }
 }
 
 function agregarSimboloExclamacion(str) {
    // Agrega un símbolo de exclamación al final del string "str" y retórnalo
    // Ejemplo: "hello world" ---> "hello world!"
    // Tu código:
-   return str + "!";
+   return str + '!';
 }
 
 function combinarNombres(nombre, apellido) {
@@ -70,17 +69,14 @@ function esVocal(letra) {
    // Si el usuario ingresa un string de más de un caracter debes retornar el mensaje: "Dato incorrecto".
    // Si no es vocal, tambien debe retornar "Dato incorrecto".
    // Tu código:
-   if (letra == 'a' || letra == 'e' || letra == 'i' || letra == 'o' || letra == 'u') {
-      return "Es vocal";
-   }
-   else if (letra.length > 1) {
-      return "Dato incorrecto";
-   }
-   else {
-      return "Dato incorrecto";
+   if (letra == 'a'|| letra == 'e' || letra == 'i' || letra == 'o' || letra == 'u') {
+      return 'Es vocal';
+   } else if (letra.length > 1) {
+      return 'Dato incorrecto';
+   } else if (letra !== 'a'|| letra !== 'e' || letra !== 'i' || letra !== 'o' || letra !== 'u') {
+      return 'Dato incorrecto';
    }
 }
-   
 
 /*⚠️ NO MODIFIQUES NADA DEBAJO DE ESTO ⚠️*/
 module.exports = {

@@ -39,6 +39,7 @@ function numeroRandom() {
    return Math.random ();
 }
 
+
 /*⚠️ NO MODIFIQUES NADA DEBAJO DE ESTO ⚠️*/
 module.exports = {
    elevarAlCuadrado,
